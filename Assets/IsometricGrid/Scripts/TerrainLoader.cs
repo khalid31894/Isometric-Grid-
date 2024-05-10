@@ -3,13 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TerrainLoader : MonoBehaviour
+public class TerrainLoader 
 {
     public string jsonFlePath = "data";
     public Terrain LoadTerrain()
     {
-        Terrain _terrain = new Terrain();
-
         TextAsset jsonTextAsset = Resources.Load<TextAsset>(jsonFlePath);
         if (jsonTextAsset == null)
         {
@@ -24,9 +22,9 @@ public class TerrainLoader : MonoBehaviour
             return null;
         }
 
-        _terrain = JsonConvert.DeserializeObject<Terrain>(jsonContent);
+        Terrain _terrain = JsonConvert.DeserializeObject<Terrain>(jsonContent);
 
-        
+
         Debug.Log("LoadJSON: " + _terrain);
 
         return _terrain;
