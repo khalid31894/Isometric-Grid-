@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class ItemPlacementManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private bool IsPlaceable(Tile tile, Item item)
     {
-        
+        return false;
     }
 }
