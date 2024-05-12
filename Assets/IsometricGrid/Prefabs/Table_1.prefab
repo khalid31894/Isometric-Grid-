@@ -98,3 +98,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   area: 2
+  spriteRenderer: {fileID: 1058887854644108036}
+  placableOnTile: 3
