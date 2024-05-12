@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3227423003526820375}
   - component: {fileID: 1568539722504240397}
-  - component: {fileID: -1478456343748580699}
+  - component: {fileID: 3281120416948781713}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-1478456343748580699
+--- !u!114 &3281120416948781713
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,3 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b5e2cf1c921884ba1cb57d3077db2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileType: 3
+  tileSprite: {fileID: 1568539722504240397}
+  isOccupied: 0

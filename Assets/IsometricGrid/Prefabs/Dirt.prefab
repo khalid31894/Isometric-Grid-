@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4871450416994017061}
   - component: {fileID: 8403674585830213425}
-  - component: {fileID: 8543628505635474715}
+  - component: {fileID: 8407637378525133734}
   m_Layer: 0
   m_Name: Dirt
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8543628505635474715
+--- !u!114 &8407637378525133734
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,3 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b5e2cf1c921884ba1cb57d3077db2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileType: 0
+  tileSprite: {fileID: 8403674585830213425}
+  isOccupied: 0
