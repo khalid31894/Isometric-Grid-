@@ -41,8 +41,10 @@ public class ItemPlacer : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("Grid"));
             if (hit.collider != null)
             {
-                //Debug.Log("Object selected: " + hit.collider.gameObject.name);
-
+                if(hit.collider.gameObject.GetComponent<Tile>().tileType != MyEnums.TileType.Wood)
+                {
+                    return;
+                }
                 ItemPlacementManager.PlaceItem_Action?.Invoke(hit.collider.gameObject.GetComponent<Tile>());
             }
         }

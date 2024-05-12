@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    [SerializeField] private MyEnums.TileType tileType;
+   public MyEnums.TileType tileType;
     public bool isOccupied = false;
     public void SetOccupied(bool occupied)
     {
